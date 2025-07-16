@@ -1,0 +1,1 @@
+Site responsivo para uma açaiteria usando HTML5, CSS3 e JS
