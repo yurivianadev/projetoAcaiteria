@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;   
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #EEE9DC;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background-color: #630368;
+    height: 15vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+   
+}
+.posIcon{
+    display: flex;
+    align-items: center;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.logo{
+    width: 3.5em;
+    height: 3.0em;
+    color: transparent;
+}
+.bi-instagramH{
+    border-radius: 13px;
+ 
+}
+.bi-instagramH:hover{
+    background-color: white; 
+    
+}
+
+.bi-whatsappH{
+    border-radius: 21px; 
+
+}
+.bi-whatsappH:hover{
+
+    background-color: white; 
+}
+
+svg:hover path {
+    fill: rgb(116, 183, 67);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+} 
+
+
+
+h1, h2, .linksInternos{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+    color: rgb(116, 183, 67);
+    font-size: 72px;
+    line-height: 108px;
+  
+}
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+}
+
+.linksInternos{
+    color:  rgb(255, 255, 255);
+    font-size: 39px;
+    line-height: 72px;
+    position: relative;
+
+}
+.linksInternos::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(116, 183, 67);
+    transition: width 0.4s ease;
+}
+.linksInternos:hover::after {
+    width: 100%;
+}
+.linksInternos:hover{
+    color:  rgb(116, 183, 67);
+    
+    line-height: 72px;
+}
+#titQuem{
+    margin-top: 10px;
+    margin-bottom: -70px;
+    padding: 50px;
+   
+   
+}
+#quem-somos{
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#quem-somos div img{
+    height: 300px;
+    width: 300px;
+
+}
+h2{
+    line-height: 55px;
+    border-radius: 10px;
+    padding: 12px;
+    width: 50vw;
+}
+
+.listaItems{
+   
+    padding-left: 5vw;
+}
+
+
+#produtosContainer{
+    background-color: #630368;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 10px;
+    padding: 30px;
+    color: white;
+    font-size: medium;
+    border-radius: 10px;
+    width: 95vw;
+    margin: auto;
+   
+}
+.linhaProduto{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#titPrinc{
+    text-align: center;
+    margin-top: -30px;
+}
+.tradicionalItems{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+#gourmetItems{
+   
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 20px;
+
+}
+
+.caixaContainer{
+    background-color: #EEE9DC;
+    color: black;
+    height: auto;
+    padding: 0px 10px 10px 10px;
+    border-radius: 10px;
+    width: 54vw;
+    margin: 10px;
+}
+#gourmetItems h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#gourmetItems .faixa{
+    font-size: medium;
+    font-weight: bolder;
+}
+
+#glassSize{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 31px;
+    background-color: #EEE9DC;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+  
+    width: 660px;
+    
+    margin-top: 10px;
+}
+.glassItem{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+#price{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    
+}
+.price{
+    
+    font-size: medium;
+    font-weight: bold;
+    background-color: #FEC22A;
+    color: #EEE9DC;
+    margin-top: -15px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+
+.imageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 426px;
+
+}
+.imageContainer1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 1683px;
+    
+}
+.imageContainer img, .imageContainer1 img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+/*Botões*/
+.btn {
+    position: relative;
+    margin: 12px;
+    padding: 11px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    background: none;
+    border: 2px solid rgb(116, 183, 67);
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;    
+    width: 187px;
+    cursor: pointer;
+}
+.liquid {
+    background: linear-gradient(rgb(116, 183, 67) 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+    transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.liquid:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: #fff;
+}
+
+footer{   
+    background-color: #80A55D;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+footer h2, p{
+    color: #2E451B;
+    text-align: center;
+}
+footer img{
+    width: 200px;
+    height: 200px;
+}
+
+.linkFooter{
+    color: #2E451B;
+    font-size: 48px;
+    line-height: 72px;
+    position: relative;
+    
+}
+
+.linkFooter::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s ease;
+}
+.linkFooter:hover::after {
+    width: 100%;
+}
+
+.bi-instagram{
+    margin-top: 19px;
+    background-color: 2E451B;
+    border-radius: 13px;
+    
+}
+.bi-instagram:hover{
+    background-color: rgb(254, 196, 43); 
+}
+footer svg:hover path {
+    fill: #630368;
+}
+.bi-whatsapp{
+    background-color: 2E451B;
+    border-radius: 21px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+}
+.bi-whatsapp:hover{
+    background-color: rgb(254, 196, 43);
+    fill: #630368;
+}
+
+#meuGit{
+    color: #2E451B;
+    
+}
+#meuGit:hover{
+    color: white;
+    
+}
+
+
+
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 1150px) {
+    #glassSize{
+        width: 650px;
+    }
+    .imageContainer{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 200px;
+        height: 426px;
+
+    }
+    .imageContainer1{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 200px;
+        height: 1683px;
+        
+    }
+    .imageContainer img, .imageContainer1 img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+}
+/*@media (max-width: 1108px) {
+   
+    .imageContainer1{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 200px;
+        height: auto;
+        margin-top: 100px;
+        
+    }
+    #gourmetItems{
+   
+        
+        width: 100vw;
+        padding: 20px;
+
+    }
+    .caixaContainer{
+        
+        width: 90vw;
+        margin: 10px;
+    }
+}
+*/
+
+@media (max-width: 995px){
+    
+    .tradicionalItems{
+        width: 600px;
+    }
+
+    .imageContainer{
+        height: 250px;
+    }
+    
+}
+
+@media (max-width: 842px){
+    .imageContainer1{
+        height: 100px;
+        margin-top: 95px;
+    }
+    #gourmetItems{
+        width: 700px;
+        padding: 0px;
+    }
+    .caixaContainer{
+        width: 86vw;
+    }
+     #glassSize{
+        width: 67vw;
+    } 
+}
+@media (max-width: 767px){
+    #glassSize{
+        width: 80vw;
+    }
+    #quem-somos{
+        display: block;
+    }
+    #quem-somos div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 637px){
+    .h2Complementos{
+        font-size: 12vw;
+    }
+   
+   
+    
+}
+
+@media (max-width: 560px){
+    #titQuem{
+        font-size: 10vw;
+        text-align: center;
+        padding: 0px;
+        margin-bottom: -26px;
+    }
+    .linksInternos{
+        font-size: 30px;
+    }
+}
+   
+@media (max-width: 444px){
+    
+    .linksInternos{
+        font-size: 25px;
+    }
+}
+   
+
+ 
+
+
+
+
+@media (max-width: 996px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav{
+      justify-content: space-between;
+  }
+  .nav-list {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    width: 50vw;
+    height: 85vh;
+    background: #59035e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
